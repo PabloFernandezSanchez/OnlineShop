@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/colorGris"
+    tools:context=".views.MonederoActivity">
+
+    <EditText
+        android:id="@+id/edDinero"
+        android:layout_width="67dp"
+        android:layout_height="49dp"
+        android:layout_marginTop="120dp"
+        android:backgroundTint="@android:color/white"
+        android:ems="10"
+        android:inputType="number"
+        android:gravity="center"
+        android:textSize="20sp"
+        android:textColor="@android:color/white"
+        android:textColorHint="@android:color/white"
+        app:layout_constraintEnd_toStartOf="@+id/btnAñadirDinero"
+        app:layout_constraintTop_toBottomOf="@+id/tvDinero" />
+
+    <Button
+        android:id="@+id/btnAñadirDinero"
+        android:layout_width="83dp"
+        android:layout_height="51dp"
+        android:layout_marginTop="120dp"
+        android:layout_marginEnd="120dp"
+        android:layout_marginRight="120dp"
+        android:background="@drawable/buttonshape"
+        android:fontFamily="@font/cocogoose"
+        android:onClick="clickAñadirDinero"
+        android:text="AÑADIR"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tvDinero" />
+
+    <ImageView
+        android:id="@+id/imageView4"
+        android:layout_width="55dp"
+        android:layout_height="46dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView2"
+        app:srcCompat="@drawable/ic_arrow_downward_black_24dp"
+        tools:ignore="VectorDrawableCompat" />
+
+    <TextView
+        android:id="@+id/tvDinero"
+        android:layout_width="226dp"
+        android:layout_height="100dp"
+        android:layout_marginTop="40dp"
+        android:fontFamily="@font/magic"
+        android:gravity="center"
+        android:text="0 €"
+        android:textColor="@android:color/white"
+        android:textSize="70sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.497"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/imageView4" />
+
+    <TextView
+        android:id="@+id/textView2"
+        android:layout_width="227dp"
+        android:layout_height="67dp"
+        android:layout_marginTop="80dp"
+        android:fontFamily="@font/atwriter"
+        android:gravity="center"
+        android:text="Este es el saldo actual que tiene tu monedero"
+        android:textColor="@android:color/white"
+        android:textSize="18sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.497"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

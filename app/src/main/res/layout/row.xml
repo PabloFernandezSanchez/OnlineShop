@@ -1,0 +1,114 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:card_view="http://schemas.android.com/apk/res-auto"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    app:cardBackgroundColor="#C6C5C5"
+    card_view:cardElevation="1dp"
+    android:layout_margin="2dp"
+    card_view:cardUseCompatPadding="false"
+    card_view:contentPadding="10dp">
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <TextView
+            android:id="@+id/tvprecio"
+            android:layout_width="wrap_content"
+            android:layout_height="25dp"
+            android:layout_marginTop="483dp"
+            android:layout_marginBottom="5dp"
+            android:fontFamily="@font/atwriter"
+            android:gravity="center"
+            android:text="TextView"
+            android:textColor="#000000"
+            android:textAlignment="textEnd"
+            android:textSize="22sp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            card_view:layout_constraintBottom_toBottomOf="parent"
+            card_view:layout_constraintEnd_toStartOf="@+id/tvprecio2"
+            card_view:layout_constraintVertical_bias="0.0"
+            tools:ignore="RtlCompat" />
+
+        <TextView
+            android:id="@+id/tvprecio2"
+            android:layout_width="20dp"
+            android:layout_height="25dp"
+            android:layout_marginTop="484dp"
+            android:layout_marginEnd="100dp"
+            android:layout_marginRight="100dp"
+            android:fontFamily="@font/atwriter"
+            android:gravity="center"
+            android:text="€"
+            android:textColor="#000000"
+            android:textSize="22sp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <TextView
+            android:id="@+id/tvtitulo"
+            android:layout_width="373dp"
+            android:layout_height="34dp"
+            android:fontFamily="@font/atwriter"
+            android:gravity="center"
+            android:text="TextView"
+            android:textColor="#535151"
+            android:textSize="15sp"
+            app:layout_constraintEnd_toEndOf="parent"
+            card_view:layout_constraintStart_toStartOf="parent"
+            card_view:layout_constraintTop_toBottomOf="@+id/ivproducto" />
+
+        <TextView
+            android:id="@+id/tallas"
+            android:layout_width="65dp"
+            android:layout_height="27dp"
+            android:layout_marginEnd="284dp"
+            android:layout_marginRight="284dp"
+            android:layout_marginBottom="4dp"
+            android:fontFamily="@font/atwriter"
+            android:gravity="right|center"
+            android:text="Tallas :"
+            android:textColor="#535151"
+            android:textSize="15sp"
+            app:layout_constraintEnd_toEndOf="parent"
+            card_view:layout_constraintBottom_toBottomOf="parent" />
+
+        <ImageView
+            android:id="@+id/ivproducto"
+            android:layout_width="376dp"
+            android:layout_height="436dp"
+            android:onClick="clickDetalle"
+            app:srcCompat="@drawable/ic_launcher_foreground"
+            card_view:layout_constraintEnd_toEndOf="parent"
+            card_view:layout_constraintStart_toStartOf="parent"
+            card_view:layout_constraintTop_toTopOf="parent"
+            tools:ignore="VectorDrawableCompat" />
+
+        <Button
+            android:id="@+id/btnAñadir"
+            android:layout_width="90dp"
+            android:layout_height="38dp"
+            android:background="@drawable/buttonshape"
+            android:fontFamily="@font/cocogoose"
+            android:onClick="clickAñadir"
+            android:text="AÑADIR"
+            card_view:layout_constraintBottom_toBottomOf="parent"
+            card_view:layout_constraintEnd_toEndOf="parent" />
+
+        <Spinner
+            android:id="@+id/spinner"
+            android:layout_width="97dp"
+            android:layout_height="30dp"
+            android:layout_marginEnd="40dp"
+            android:layout_marginRight="40dp"
+            android:fontFamily="@font/cocogoose"
+            card_view:layout_constraintBottom_toBottomOf="parent"
+            card_view:layout_constraintEnd_toStartOf="@+id/tvprecio"
+            card_view:layout_constraintTop_toBottomOf="@+id/tvtitulo"
+            card_view:layout_constraintVertical_bias="0.923" />
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</androidx.cardview.widget.CardView>

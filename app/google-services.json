@@ -1,0 +1,48 @@
+{
+  "project_info": {
+    "project_number": "87336207433",
+    "firebase_url": "https://onlineshop-52b11.firebaseio.com",
+    "project_id": "onlineshop-52b11",
+    "storage_bucket": "onlineshop-52b11.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:87336207433:android:2b107604a2ceb85bcbab98",
+        "android_client_info": {
+          "package_name": "net.azarquiel.onlineshop"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "87336207433-nbcq949ikhebbereonb2p0cpasddjnqe.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "net.azarquiel.onlineshop",
+            "certificate_hash": "304a3a336f211b96a7443b52608cca21327f83d4"
+          }
+        },
+        {
+          "client_id": "87336207433-bb5j81ougvf6phpojaqi2u6vrbf93vnd.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAZEkUhkIRiyTdqOcCe5ZkGi0lPNM74tU0"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "87336207433-bb5j81ougvf6phpojaqi2u6vrbf93vnd.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

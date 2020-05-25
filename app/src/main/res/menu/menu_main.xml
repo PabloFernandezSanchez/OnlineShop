@@ -1,0 +1,73 @@
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:context="net.azarquiel.onlineshop.views.MainActivity">
+
+    <item
+        android:id="@+id/monedero"
+        android:title="Monedero"
+        android:icon="@drawable/ic_account_balance_wallet_black_24dp"
+        app:showAsAction="ifRoom" />
+    <item
+        android:id="@+id/inicio"
+        android:title="Inicio"
+        android:icon="@drawable/ic_home_black_24dp"
+        app:showAsAction="never" />
+    <item
+        android:id="@+id/carrito"
+        android:title="Inicio"
+        android:icon="@drawable/ic_shopping_cart_black_24dp"
+        app:showAsAction="ifRoom" />
+
+    <item
+        android:id="@+id/hombre"
+        android:title="Hombre"
+        android:icon="@mipmap/ic_launcher_foreground7"
+        app:showAsAction="never" >
+        <menu>
+
+            <item
+                android:id="@+id/pshombre"
+                android:title="Parte superior"
+                android:icon="@drawable/ic_icons8_t_shirt_24"/>
+
+            <item
+                android:id="@+id/pihombre"
+                android:title="Parte inferior"
+                android:icon="@drawable/ic_icons8_trousers_24"/>
+
+            <item
+                android:id="@+id/zapatoshombre"
+                android:title="Exclusivo"
+                android:icon="@drawable/ic_whatshot_black_24dp"/>
+
+        </menu>
+
+    </item>
+    <item
+        android:id="@+id/mujer"
+        android:title="Mujer"
+        app:showAsAction="never"
+        android:icon="@mipmap/ic_launcher_foreground8">
+
+        <menu>
+
+            <item
+                android:id="@+id/psmujer"
+                android:title="Parte superior"
+                android:icon="@drawable/ic_icons8_little_black_dress_24"/>
+
+            <item
+                android:id="@+id/pimujer"
+                android:title="Parte inferior"
+                android:icon="@drawable/ic_icons8_shorts_24"/>
+
+            <item
+                android:id="@+id/zapatosmujer"
+                android:title="Exclusivo"
+                android:icon="@drawable/ic_whatshot_black_24dp"/>
+
+        </menu>
+
+    </item>
+</menu>

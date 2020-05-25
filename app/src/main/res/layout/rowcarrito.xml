@@ -1,0 +1,121 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:card_view="http://schemas.android.com/apk/res-auto"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    app:cardBackgroundColor="#C6C5C5"
+    card_view:cardElevation="1dp"
+    android:layout_margin="2dp"
+    card_view:cardUseCompatPadding="false"
+    card_view:contentPadding="10dp">
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <TextView
+            android:id="@+id/tvpreciocarrito"
+            android:layout_width="76dp"
+            android:layout_height="41dp"
+            android:layout_marginTop="136dp"
+            android:fontFamily="@font/atwriter"
+            android:gravity="center"
+            android:text="TextView"
+            android:textColor="#000000"
+            android:textAlignment="textEnd"
+            android:textSize="30sp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            card_view:layout_constraintEnd_toStartOf="@+id/tvpreciocarrito2"
+            card_view:layout_constraintStart_toEndOf="@+id/ivproducto"
+            tools:ignore="RtlCompat" />
+
+        <TextView
+            android:id="@+id/tvpreciocarrito2"
+            android:layout_width="29dp"
+            android:layout_height="42dp"
+            android:layout_marginTop="136dp"
+            android:layout_marginEnd="8dp"
+            android:layout_marginRight="8dp"
+            android:fontFamily="@font/atwriter"
+            android:gravity="center"
+            android:text="€"
+            android:textColor="#000000"
+            android:textSize="30sp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            card_view:layout_constraintStart_toEndOf="@+id/ivproducto" />
+
+        <TextView
+            android:id="@+id/tvtitulocarrito"
+            android:layout_width="208dp"
+            android:layout_height="wrap_content"
+            android:autoSizeTextType="uniform"
+            android:fontFamily="@font/atwriter"
+            android:gravity="center"
+            android:text="TextView"
+            android:textColor="#535151"
+            app:layout_constraintEnd_toEndOf="parent"
+            card_view:layout_constraintStart_toEndOf="@+id/ivcarrito"
+            card_view:layout_constraintTop_toTopOf="parent" />
+
+        <TextView
+            android:id="@+id/tvtallacarro"
+            android:layout_width="26dp"
+            android:layout_height="20dp"
+            android:layout_marginStart="3dp"
+            android:layout_marginLeft="3dp"
+            android:layout_marginEnd="128dp"
+            android:layout_marginRight="128dp"
+            android:layout_marginBottom="22dp"
+            android:autoSizeTextType="uniform"
+            android:fontFamily="@font/cocogoose"
+            android:gravity="center"
+            android:text="M"
+            android:textColor="#000000"
+            android:textSize="18dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            card_view:layout_constraintBottom_toBottomOf="parent"
+            card_view:layout_constraintStart_toEndOf="@+id/tvtallacarro2" />
+
+        <TextView
+            android:id="@+id/tvtallacarro2"
+            android:layout_width="55dp"
+            android:layout_height="25dp"
+            android:layout_marginEnd="156dp"
+            android:layout_marginRight="156dp"
+            android:layout_marginBottom="22dp"
+            android:autoSizeTextType="uniform"
+            android:fontFamily="@font/atwriter"
+            android:gravity="center"
+            android:text="Talla :"
+            android:textColor="#535151"
+            app:layout_constraintEnd_toEndOf="parent"
+            card_view:layout_constraintBottom_toBottomOf="parent"
+            card_view:layout_constraintStart_toEndOf="@+id/ivcarrito" />
+
+        <ImageView
+            android:id="@+id/ivcarrito"
+            android:layout_width="176dp"
+            android:layout_height="195dp"
+            app:srcCompat="@drawable/ic_launcher_foreground"
+            card_view:layout_constraintStart_toStartOf="parent"
+            card_view:layout_constraintTop_toTopOf="parent"
+            tools:ignore="VectorDrawableCompat" />
+
+
+        <ImageButton
+            android:id="@+id/imageButton"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="#C6C5C5"
+            android:onClick="clickBorrar"
+            app:srcCompat="@drawable/ic_delete_black_24dp"
+            card_view:layout_constraintBottom_toBottomOf="parent"
+            card_view:layout_constraintEnd_toEndOf="parent"
+            card_view:layout_constraintTop_toTopOf="parent"
+            tools:ignore="VectorDrawableCompat" />
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</androidx.cardview.widget.CardView>
